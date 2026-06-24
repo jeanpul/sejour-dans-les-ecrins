@@ -1,0 +1,22 @@
+{
+  "name": "sejour-dans-les-ecrins",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Carnet de séjour mobile pour un week-end dans les Écrins (La Grave) — SPA Svelte mono-fichier.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "svelte": "^5.56.4",
+    "vite": "^8.1.0",
+    "vite-plugin-singlefile": "^2.3.3"
+  },
+  "dependencies": {
+    "@tmcw/togeojson": "^7.1.2",
+    "leaflet": "^1.9.4"
+  }
+}

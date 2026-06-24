@@ -1,0 +1,52 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+context: |
+  Produit : "Séjour dans les Écrins" — une mini application web (SPA) carnet de
+  voyage / planificateur pour un week-end en couple (Fabien & Christelle) dans le
+  massif des Écrins, du 21 au 23 août 2026. Base confirmée : La Grave / La Meije.
+
+  Nature de l'app :
+  - SPA (Single Page Application) consultée en priorité sur SMARTPHONE.
+  - Distribuée simplement (ex. fichier/URL envoyé par mail), "ajoutable à l'écran
+    d'accueil" pour un confort type appli.
+  - EN LIGNE : le téléphone dispose d'internet sur place. (Le offline a été
+    abandonné — voir historique.) Donc cartes interactives en ligne et images
+    chargées par URL sont OK.
+
+  Priorités UX :
+  - Mobile-first, lisible en extérieur (bon contraste), navigation au pouce.
+  - Légèreté : images référencées par URL (libres de droits, Wikimedia Commons),
+    pas d'images embarquées en base64.
+  - Accès rapide aux infos terrain : adresses, téléphones, liens de réservation
+    (hébergement / restaurants), tracés des randos sur carte.
+
+  Contenu (séjour type La Grave) :
+  - Hébergement avec demi-pension + chambre privée (top : Hôtel Le Castillan).
+  - Randos à la journée avec pique-nique le midi ; minimiser la voiture.
+  - J1 Lac du Pontet + Oratoire/Perchoir du Chazelet ; J2 (grosse journée)
+    Plateau d'Emparis lacs Lérié & Noir ; J3 Lac & col d'Arsine (ou variante).
+  - ⚠️ Lauvitel / vallée du Vénéon : accès voiture coupé (crue juin 2024),
+    navette uniquement — option dégradée.
+
+  Cartes & randos :
+  - Cartes interactives (ex. Leaflet) avec fond IGN/OSM et tracés GPX par rando.
+  - GPX issus de fiches topo (Visorando, etc.).
+
+  Données = à vérifier sur le terrain : disponibilités, tarifs et numéros de
+  téléphone doivent être confirmés (Office de Tourisme La Grave 04 76 79 90 05).
+  Ne jamais inventer de coordonnées.
+
+  Stack technique : non figée (à décider dans design). Privilégier la simplicité
+  et le déploiement statique.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
