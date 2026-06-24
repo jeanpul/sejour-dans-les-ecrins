@@ -73,6 +73,7 @@ export interface Sejour {
   jours: Jour[]
   hebergement: Lieu
   alternatives: Lieu[]
+  restaurants: Lieu[]
   contacts: Lieu[]
   banniere: Media
 }

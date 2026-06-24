@@ -196,7 +196,7 @@ const sejour: Sejour = {
             nom: 'La Danchère (~984 m), près de Bourg-d’Oisans',
             latlng: [44.9873, 6.0794],
             acces:
-              '⚠️ Accès voiture coupé depuis la crue de juin 2024 (RD530 fermée). Navette gratuite depuis Bourg-d’Oisans (arrêt Les Ougiers) ou accès piéton via la télécabine de Venosc.',
+              '⚠️ Été 2026 : vallée du Vénéon en NAVETTE uniquement (crue de juin 2024). Itinéraire à privilégier : télécabine de Venosc (gratuite piétons) puis sentier rive gauche du Vénéon (passerelle des Étroits). RD530 rouverte jusqu’à Pierre Noire seulement ; pas de voiture jusqu’au fond. À reconfirmer début août (Oisans Tourisme).',
           },
           interet:
             'Plus grand et plus profond lac des Écrins (~35 ha), entouré de falaises ; réserve intégrale sur une rive.',
@@ -220,10 +220,10 @@ const sejour: Sejour = {
     telFiable: true,
     reservationUrl: 'https://www.le-castillan.com/',
     demiPension: 'Oui (chambre double en demi-pension)',
-    prix: '~180 € / nuit chambre double en demi-pension',
-    note: 'Établissement historique (depuis 1930), chambre privée, restaurant sur place.',
+    prix: '~180–188 € / nuit chambre double en demi-pension (haute saison)',
+    note: 'Établissement historique (depuis 1930), chambre privée, restaurant sur place. Saison été confirmée : 29 mai → 25 septembre 2026 (donc ouvert pour vos dates).',
     fiabilite:
-      'Tarif issu de la saison 2024/2025 — à confirmer pour le 21–22 août 2026 par téléphone. (Un 2ᵉ numéro 04 76 79 90 93 circule ; privilégier le site officiel.)',
+      'Téléphone et site confirmés (source officielle). Tarif haute saison indicatif — disponibilité du 21–22 août 2026 à confirmer par réservation.',
   },
 
   alternatives: [
@@ -254,6 +254,44 @@ const sejour: Sejour = {
       demiPension: 'Oui — ~72 €/pers, mais minimum 3 nuits',
       note: 'Très réputé, vue Meije. Minimum 3 nuits en demi-pension : à négocier pour 2 nuits.',
       fiabilite: 'Contrainte 3 nuits à confirmer.',
+    },
+  ],
+
+  restaurants: [
+    {
+      nom: 'Le Faranchin',
+      type: 'Cuisine de montagne traditionnelle — Villar-d’Arène',
+      adresse: 'RD1091, 05480 Villar-d’Arène',
+      tel: '04 76 79 90 01',
+      telFiable: true,
+      reservationUrl: 'https://www.lefaranchin.com/le-restaurant/',
+      note: 'Menu entrée/plat/dessert ~42 €. Ouvert tous les jours midi et soir, 16 mai → 5 oct 2026 (réservation conseillée).',
+    },
+    {
+      nom: 'Bistrot de la Meije',
+      type: 'Bistrot / tapas, terrasse vue Meije — La Grave',
+      adresse: '5 route des Grands Cols (RD1091), 05320 La Grave',
+      tel: '04 76 79 92 10',
+      telFiable: true,
+      reservationUrl: 'http://www.bistrotdelameije.com/',
+      note: 'Cuisine maison revisitée, bar à vin, épicerie fine.',
+      fiabilite: 'Horaires variables selon saison — à vérifier (le certificat du site peut afficher une alerte).',
+    },
+    {
+      nom: 'Auberge Edelweiss',
+      type: 'Cuisine française saisonnière — La Grave',
+      adresse: 'Au cœur du village, 05320 La Grave',
+      tel: '04 76 79 90 93',
+      telFiable: true,
+      reservationUrl: 'https://www.hotel-edelweiss.com/',
+      note: 'Menu « ardoise » renouvelé chaque soir, option végétarienne, dîner dès 19h30. Terrasse face à la Meije.',
+    },
+    {
+      nom: 'Café-Crêperie Les Glaciers',
+      type: 'Bistrot / crêperie — La Grave',
+      adresse: 'Centre du village, 05320 La Grave',
+      note: 'Le plus ancien bistrot du village : crêpes, plat du jour, planches, pâtisseries.',
+      fiabilite: 'Adresse précise et téléphone à vérifier auprès de l’Office de Tourisme (04 76 79 90 05).',
     },
   ],
 

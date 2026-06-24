@@ -52,6 +52,15 @@
     {@render lieuCard(lieu)}
   {/each}
 
+  <h2>Restaurants</h2>
+  <p class="muted small">
+    Les dîners sont en demi-pension à l’hébergement ; ces tables sont pour varier ou
+    dépanner (et pour le déjeuner les jours sans pique-nique).
+  </p>
+  {#each sejour.restaurants as lieu (lieu.nom)}
+    {@render lieuCard(lieu)}
+  {/each}
+
   <h2>Contacts utiles</h2>
   {#each sejour.contacts as lieu (lieu.nom)}
     {@render lieuCard(lieu)}

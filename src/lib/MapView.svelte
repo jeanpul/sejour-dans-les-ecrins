@@ -41,7 +41,19 @@
 
     const geo = gpxToGeoJson(getGpxRaw(rando.gpxId))
     if (geo && geo.features && geo.features.length) {
-      const layer = L.geoJSON(geo, { style: { color: '#c2410c', weight: 4 } }).addTo(map)
+      const layer = L.geoJSON(geo, {
+        style: { color: '#c2410c', weight: 4 },
+        // Les waypoints GPX -> petits cercles (évite l'icône marqueur par défaut
+        // dont les images PNG ne sont pas embarquées dans le bundle).
+        pointToLayer: (feature, latlng) =>
+          L.circleMarker(latlng, {
+            radius: 4,
+            color: '#1d3b53',
+            weight: 2,
+            fillColor: '#fff',
+            fillOpacity: 1,
+          }),
+      }).addTo(map)
       try {
         map.fitBounds(layer.getBounds(), { padding: [20, 20] })
         hasTrace = true

@@ -12,7 +12,7 @@
 - [x] 2.3 Renseigner l'hébergement (Le Castillan par défaut + alternatives : Au Vieux Guide, Le Bec, Le Sérac) avec adresse, tel, lien résa, demi-pension, champ `fiabilite`
 - [x] 2.4 Renseigner les randos (Pontet, Oratoire/Perchoir, Emparis lacs Lérié & Noir, Arsine, option Lauvitel) : distance, D+, durée, type, départ/parking, intérêt, topoUrl, statut
 - [x] 2.5 Renseigner les médias (URLs Wikimedia en `/thumb/…px`) avec auteur, licence, page source ; ajouter l'Office de Tourisme La Grave (04 76 79 90 05)
-- [ ] 2.6 Ajouter les fichiers `src/data/gpx/*.gpx` et les importer en `?raw` (inlinés au build) — ⏳ mécanisme d'import en place (`import.meta.glob ?raw`) ; **les vraies traces GPX restent à télécharger** (liens topo) et à déposer dans `src/data/gpx/`
+- [x] 2.6 Ajouter les fichiers `src/data/gpx/*.gpx` et les importer en `?raw` (inlinés au build) — ✅ 4 traces réelles déposées (`pontet`, `emparis`, `arsine`, `lauvitel`) depuis les fiches Geotrek du **Parc national des Écrins** ; tracés vérifiés à l'écran (polyline + waypoints, 0 erreur)
 
 ## 3. Coquille SPA & navigation (mobile-spa-shell)
 
